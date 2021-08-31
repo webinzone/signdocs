@@ -9,16 +9,16 @@ local:
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 amazon_dev:
   service: S3
-  access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
-  secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-  region: <%= Rails.application.credentials.dig(:aws, :dev, :region) %>
-  bucket: <%= Rails.application.credentials.dig(:aws, :dev, :bucket) %>
+  access_key_id: <%= Rails.application.credentials.dig(:aws, 'AKIA2YUM6T4SYJ5R4THX') %>
+  secret_access_key: <%= Rails.application.credentials.dig(:aws, '8gijstD5zZk7VtvZjXkjoC941wQsPjuul0QEQOpe') %>
+  region: <%= Rails.application.credentials.dig(:aws, :dev, 'ap-southeast-2') %>
+  bucket: <%= Rails.application.credentials.dig(:aws, :dev, 'arn:aws:s3:::mydocusign') %>
 
 # amazon_prod:
 #   service: S3
 #   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
 #   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-#   region: <%= Rails.application.credentials.dig(:aws, :region) %>
+#   region: <%= Rails.application.credentials.dig(:aws, ENV['AWS_REGION']) %>
 #   bucket: <%= Rails.application.credentials.dig(:aws, :prod, :bucket) %>
 amazon_prod:
   service: S3

@@ -227,9 +227,9 @@ class SignatureBlock < ApplicationRecord
              )
     else
       return Aws::KMS::Client.new(
-               region: ENV["aws_region"] || "us-west-2",
-               access_key_id: ENV["aws_access_key_id"],
-               secret_access_key: ENV["aws_secret_access_key"],
+               region: "ap-southeast-2",
+               access_key_id: "AKIA2YUM6T4SYJ5R4THX",
+               secret_access_key: "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",
              )
     end
   end

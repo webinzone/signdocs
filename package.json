@@ -56,7 +56,6 @@
     "reselect": "^4.0.0",
     "signature_pad": "^3.0.0-beta.3",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
     "yup": "^0.29.3",
     "zxcvbn": "^4.4.2"
   },
@@ -86,6 +85,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^2.0.5",
     "terser-webpack-plugin": "^4.1.0",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.2"
   },

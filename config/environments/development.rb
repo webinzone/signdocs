@@ -28,8 +28,8 @@ Rails.application.configure do
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
-  # config.active_storage.service = :local
-  config.active_storage.service = :amazon_dev
+   config.active_storage.service = :local
+  #config.active_storage.service = :amazon_dev
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
@@ -39,7 +39,7 @@ Rails.application.configure do
     :address              => "smtp.sendgrid.net",
     :port                 => 587,
     :user_name            => "apikey",
-    :password             => Rails.application.credentials.sendgrid[:api_password],
+    :password             => "",
     :authentication       => "plain",
     :enable_starttls_auto => true
 
