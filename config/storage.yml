@@ -22,10 +22,10 @@ amazon_dev:
 #   bucket: <%= Rails.application.credentials.dig(:aws, :prod, :bucket) %>
 amazon_prod:
   service: S3
-  access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
-  secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
-  region: <%= ENV['AWS_REGION'] %>
-  bucket: <%= ENV['S3_BUCKET_NAME'] %>
+  access_key_id: 'AKIA2YUM6T4SYJ5R4THX'
+  secret_access_key: '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'
+  region: 'ap-southeast-2'
+  bucket: 'arn:aws:s3:::mydocusign'
 
 
 
